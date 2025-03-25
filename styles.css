@@ -1,77 +1,64 @@
-/* styles.css */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #8e44ad, #3498db);
-    color: #fff;
+    background-color: #f8f8f8;
 }
 
 header {
-    background: #2c3e50;
+    background-color: #ff6f61;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    font-size: 24px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
+nav {
+    text-align: center;
+    background-color: #ff8f80;
+    padding: 10px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
+    color: white;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
 }
 
-nav ul li a:hover {
-    color: #8e44ad;
-}
-
-h2 {
-    text-shadow: 0 0 10px #3498db, 0 0 20px #8e44ad;
-}
-
-.cards {
+.container {
     display: flex;
-    justify-content: space-around;
-    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
 }
 
-.card {
-    background: white;
-    color: #333;
+.item {
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 30%;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 250px;
 }
 
-.card:hover {
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-.cta-button {
-    background-color: #8e44ad;
-    color: white;
-    border: none;
+.item img {
+    max-width: 100%;
     border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #3498db;
+.item a {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.item a:hover {
+    background-color: #e65c50;
 }
